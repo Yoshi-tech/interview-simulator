@@ -1,0 +1,246 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+  animation: fadeUp 0.35s ease;
+}
+
+.scoreHero {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.avgScore {
+  font-family: var(--font-display);
+  font-size: clamp(64px, 12vw, 96px);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.avgOut {
+  font-size: 0.45em;
+  color: var(--text-muted);
+  vertical-align: super;
+  margin-left: 4px;
+}
+
+.avgLabel {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.summaryBox {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-md);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summaryLabel {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.summaryText {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  padding: 4px 0;
+}
+
+.dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  animation: pulse 1.2s ease infinite;
+}
+
+.dots span:nth-child(2) { animation-delay: 0.2s; }
+.dots span:nth-child(3) { animation-delay: 0.4s; }
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.questionList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.qCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  transition: border-color var(--transition);
+}
+
+.qCard:hover {
+  border-color: var(--border-md);
+}
+
+.qHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.qNum {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.ratingBadge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+
+.excellent {
+  background: rgba(200, 240, 96, 0.12);
+  color: #c8f060;
+  border: 1px solid rgba(200, 240, 96, 0.25);
+}
+
+.good {
+  background: rgba(255, 181, 71, 0.12);
+  color: #ffb547;
+  border: 1px solid rgba(255, 181, 71, 0.25);
+}
+
+.needsWork {
+  background: rgba(255, 95, 95, 0.12);
+  color: #ff5f5f;
+  border: 1px solid rgba(255, 95, 95, 0.25);
+}
+
+.qScore {
+  font-size: 13px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.qText {
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.answerBlock {
+  background: var(--bg-raised);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+}
+
+.answerLabel {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.answerText {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  white-space: pre-wrap;
+  font-family: var(--font-mono);
+}
+
+.feedbackRows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.feedRow {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.feedIcon {
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.tipRow {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  background: var(--bg-raised);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+}
+
+.footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.restartBtn {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-radius: var(--radius);
+  padding: 13px 32px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: filter var(--transition);
+}
+
+.restartBtn:hover {
+  filter: brightness(1.08);
+}

@@ -1,0 +1,136 @@
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-md);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  animation: fadeUp 0.25s ease;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.scoreRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingBadge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.excellent {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid rgba(200, 240, 96, 0.3);
+}
+
+.good {
+  background: var(--amber-dim);
+  color: var(--amber);
+  border: 1px solid rgba(255, 181, 71, 0.3);
+}
+
+.needsWork {
+  background: var(--red-dim);
+  color: var(--red);
+  border: 1px solid rgba(255, 95, 95, 0.3);
+}
+
+.score {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+}
+
+.outOf {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.streaming {
+  display: flex;
+  gap: 6px;
+  padding: 0.5rem 0;
+}
+
+.streamDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  animation: pulse 1.2s ease infinite;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.rowIcon {
+  font-size: 16px;
+  line-height: 1.4;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.rowLabel {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  margin-bottom: 3px;
+}
+
+.rowText {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.tip {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: var(--bg-raised);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+}
+
+.tipIcon {
+  font-size: 12px;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tipText {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
